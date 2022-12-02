@@ -37,7 +37,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
 
 
 //halaman yang diakses admin dan editor
-Route::middleware(['auth', 'editor', 'admin'])->group(function () {  
+Route::middleware(['auth', 'editor'])->group(function () {  
     Route::resource('post', PostController::class);
     Route::resource('kategori', KategoriController::class);
     Route::resource('produk', ProdukController::class);
