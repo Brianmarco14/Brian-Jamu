@@ -28,42 +28,42 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <h2><strong> Wes Makmur</strong></h2>
                 </a>
-                <a class="nav-link ms-5" href="{{ url('/dasboard') }}">
+                <a class="nav-link ms-5" href="{{ url('dasboard') }}">
                     Rekomendasi
                 </a>
                 @elseif(Auth::user()->role == "editor")
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <h2><strong> Wes Makmur</strong></h2>
                 </a>
-                <a class="nav-link ms-5 me-3" href="{{ url('/dasboard') }}">
+                <a class="nav-link ms-5 me-3" href="{{ url('dasboard') }}">
                     Rekomendasi
                 </a>
-                <a class="nav-link me-3" href="{{ url('/post') }}">
+                <a class="nav-link me-3" href="{{ url('post') }}">
                     Posting
                 </a>
-                <a class="nav-link me-3" href="{{ url('/kategori') }}">
+                <a class="nav-link me-3" href="{{ url('kategori') }}">
                     Kategori
                 </a>
-                <a class="nav-link me-3" href="{{ url('/produk') }}">
+                <a class="nav-link me-3" href="{{ url('produk') }}">
                     Produk
                 </a>
                 @elseif(Auth::user()->role == "admin")
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <h2><strong> Wes Makmur</strong></h2>
                 </a>
-                <a class="nav-link ms-5 me-3" href="{{ url('/dasboard') }}">
+                <a class="nav-link ms-5 me-3" href="{{ url('dasboard') }}">
                     Rekomendasi
                 </a>
-                <a class="nav-link me-3" href="{{ url('/post') }}">
+                <a class="nav-link me-3" href="{{ url('post') }}">
                     Posting
                 </a>
-                <a class="nav-link me-3" href="{{ url('/kategori') }}">
+                <a class="nav-link me-3" href="{{ url('kategori') }}">
                     Kategori
                 </a>
-                <a class="nav-link me-3" href="{{ url('/produk') }}">
+                <a class="nav-link me-3" href="{{ url('produk') }}">
                     Produk
                 </a>
-                <a class="nav-link me-3" href="{{ url('/user') }}">
+                <a class="nav-link me-3" href="{{ url('user') }}">
                     User
                 </a>
                 @endif
